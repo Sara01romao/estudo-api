@@ -27,3 +27,10 @@ app.route('/').put((req, res)=>{
     author = req.body.author;
     res.send(author)
 })
+
+
+//delete
+app.route('/:id').delete((req,res) => {
+   
+    res.send(req.params.id)
+})
